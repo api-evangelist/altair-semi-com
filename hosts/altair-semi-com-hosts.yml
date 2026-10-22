@@ -1,0 +1,64 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - portal
+  - website
+hosts:
+- host: altair-semi.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: altair-semi.com
+  role: website
+  relation: own
+- host: api.altair-semi.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: altair-semi.com
+  role: api
+  relation: own
+- host: api.altairsemi.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: altairsemi.com
+  role: api
+  relation: other-domain
+- host: www.altairsemi.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - DeveloperPortal
+  - Blog
+  serves:
+  - docs
+  registrable_domain: altairsemi.com
+  role: portal
+  relation: other-domain

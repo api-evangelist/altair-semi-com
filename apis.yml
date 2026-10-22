@@ -1,26 +1,80 @@
 aid: altair-semi-com
+
 name: Altair Semiconductor
-description: 'Altair Semiconductor is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio; backed by bessemer-venture-partners) and added to the network as a stub for full-pipeline
-  profiling.'
+
+image: https://www.altairsemi.com/wp-content/uploads/2026/03/og_image_altair.png
+
+description: 'Altair Semiconductor provides cellular IoT chipsets, including LTE‑M, NB‑IoT, LPWA and 5G‑ready modems and system‑on‑chip solutions. Its products integrate ultra‑low‑power connectivity, hardware security and carrier‑grade iSIM for industrial and consumer applications such as smart meters, wearables, trackers and vehicle telematics.'
+
 url: https://raw.githubusercontent.com/api-evangelist/altair-semi-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- Cellular IoT
+- LTE‑M
+- NB‑IoT
+- LPWA
+- Modems
+- System‑on‑Chip
+- IoT Chipsets
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- bessemer-venture-partners
+
 common:
+- type: Hosts
+  url: hosts/altair-semi-com-hosts.yml
+- type: Vendors
+  url: vendors/altair-semi-com-vendors.yml
+- type: TermsOfService
+  url: https://www.altairsemi.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.altairsemi.com/privacy/
+- type: Newsroom
+  url: https://www.altairsemi.com/news/
+- type: DeveloperPortal
+  url: https://www.altairsemi.com/developer/
+- type: Blog
+  url: https://www.altairsemi.com/blog/
+- type: DomainSecurity
+  url: security/altair-semi-com-domain-security.yml
 - type: Website
   url: https://altair-semi.com/
+
+apis: []
+
+x-backed-by:
+- bessemer-venture-partners
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://altair-semi.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

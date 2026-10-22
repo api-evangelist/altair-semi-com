@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/altair-semi-com/integrations
+- https://zapier.com/apps/altair-semi/integrations
+- https://zapier.com/apps/altair-semiconductor/integrations
+- https://n8n.io/integrations/altair-semi-com/
+- https://n8n.io/integrations/altair-semi/
+- https://composio.dev/toolkits/altair-semi-com
+- https://monid.ai/tools/altair-semi-com
+checked:
+- https://composio.dev/toolkits/altair-semi-com
+- https://monid.ai/tools/altair-semi-com
+- https://n8n.io/integrations/altair-semi-com/
+- https://n8n.io/integrations/altair-semi/
+- https://zapier.com/apps/altair-semi-com/integrations
+- https://zapier.com/apps/altair-semi/integrations
+- https://zapier.com/apps/altair-semiconductor/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
